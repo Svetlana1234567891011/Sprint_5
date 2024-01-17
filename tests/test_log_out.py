@@ -14,4 +14,5 @@ class TestExit:
         WebDriverWait(driver, 30).until(EC.visibility_of_element_located(Locators.EXIT_BUTTON))
         driver.find_element(*Locators.EXIT_BUTTON).click()
         wait = WebDriverWait(driver, 20)
-        assert wait.until(EC.visibility_of_element_located(Locators.SUBMIT_BUTTON))
+        assert wait.until(EC.visibility_of_element_located(Locators.SUBMIT_BUTTON1)) # если появляется кнопка Войти
+        # значит нам удалось разлогиниться
