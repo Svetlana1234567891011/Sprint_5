@@ -14,7 +14,7 @@ class Locators:
     ORDER_BUTTON = (By.XPATH, ".//button[text()='Оформить заказ']") # кнопка Оформить заказ
     STATUS_MESSAGE = (By.XPATH, "//p[contains(@class, 'input__error')]")  # Некорректный пароль (сообщение об ошибке)
     LOGIN_BUTTON_MAIN = (By.XPATH,
-                         "//button[contains(@class, 'button_button__33qZ0 button_button_type_primary__1O7Bx')]")
+                         "//button[contains(@class, 'button_button__33qZ0')]")
     ENTER = (By.XPATH, "//a[@href='/login']")
     # вход через кнопку в форме восстановления пароля
     FORGOT_PASSWORD = (By.XPATH, "//a[@href='/forgot-password']")
