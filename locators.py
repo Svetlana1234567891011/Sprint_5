@@ -7,11 +7,9 @@ class Locators:
     NAME = (By.XPATH, ".//label[text()='Имя']/following-sibling::input[@name='name']")  # поле ввода имени
     EMAIL_FIELD = (By.XPATH, "//label[text()='Email']/following-sibling::input[@name='name']")  # поле ввода почты
     PASSWORD_FIELD = (By.XPATH, ".//input[@type='password']")  # поле пароля
-    SUBMIT_BUTTON = (By.CSS_SELECTOR,
-                     ".button_button__33qZ0.button_button_type_primary__1O7Bx.button_button_size_medium__3zxIa")
+    SUBMIT_BUTTON = (By.XPATH, '//div[contains(@class, "Auth_login__3hAey")]//button')
     # Кнопка Зарегистрироваться для отправки данных для регистрации на странице
-    SUBMIT_BUTTON1 = (By.CSS_SELECTOR,
-                      ".button_button__33qZ0.button_button_type_primary__1O7Bx.button_button_size_medium__3zxIa")
+    SUBMIT_BUTTON1 = (By.XPATH, '//form[contains(@class, "Auth_form__3qKeq")]//button')
     # кнопка Войти, отправляющая данные пользователя для залогинивания
     ORDER_BUTTON = (By.XPATH, ".//button[text()='Оформить заказ']") # кнопка Оформить заказ
     STATUS_MESSAGE = (By.XPATH, "//p[contains(@class, 'input__error')]")  # Некорректный пароль (сообщение об ошибке)
