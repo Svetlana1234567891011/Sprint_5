@@ -1,7 +1,7 @@
 from selenium.webdriver.support import expected_conditions as EC
 from faker import Faker
 from selenium.webdriver.support.wait import WebDriverWait
-from ..locators import Locators
+from locators import Locators
 
 faker = Faker()
 
